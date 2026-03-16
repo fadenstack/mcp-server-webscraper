@@ -1,0 +1,17 @@
+services:
+  mcp-webscrape:
+    build:
+      context: .
+    image: llmport/mcp-webscrape:latest
+    container_name: mcp-webscrape
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "${MCP_WEBSCRAPE_PORT:-8102}:8102"
+    volumes:
+      - ./data:/app/mcp/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8102/api/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
