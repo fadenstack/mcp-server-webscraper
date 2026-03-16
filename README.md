@@ -12,8 +12,8 @@ Designed for **LLM token reduction by content quality**, i.e. boilerplate remova
 
 ## Tool
 
-| Tool | Description |
-| --- | --- |
+| Tool         | Description                                                      |
+| ------------ | ---------------------------------------------------------------- |
 | `scrape_url` | Fetches a URL and extracts main textual content with Trafilatura |
 
 ## Quick Start
@@ -36,23 +36,23 @@ uv run python -m mcp_server
 
 Environment variables use prefix `MCP_WEBSCRAPE_`:
 
-| Variable | Default | Description |
-| --- | --- | --- |
-| `MCP_WEBSCRAPE_HOST` | `0.0.0.0` | Bind host |
-| `MCP_WEBSCRAPE_PORT` | `8102` | Bind port |
-| `MCP_WEBSCRAPE_REQUEST_TIMEOUT` | `20` | Fetch timeout (seconds) |
-| `MCP_WEBSCRAPE_USER_AGENT` | `LLM.port-Webscrape-MCP/1.0` | HTTP User-Agent |
-| `MCP_WEBSCRAPE_DEFAULT_MAX_OUTPUT_CHARS` | `12000` | Default output cap |
-| `MCP_WEBSCRAPE_AUTH_TOKEN` | _(empty)_ | Optional bearer token for MCP endpoint |
+| Variable                                 | Default                      | Description                            |
+| ---------------------------------------- | ---------------------------- | -------------------------------------- |
+| `MCP_WEBSCRAPE_HOST`                     | `0.0.0.0`                    | Bind host                              |
+| `MCP_WEBSCRAPE_PORT`                     | `8102`                       | Bind port                              |
+| `MCP_WEBSCRAPE_REQUEST_TIMEOUT`          | `20`                         | Fetch timeout (seconds)                |
+| `MCP_WEBSCRAPE_USER_AGENT`               | `LLM.port-Webscrape-MCP/1.0` | HTTP User-Agent                        |
+| `MCP_WEBSCRAPE_DEFAULT_MAX_OUTPUT_CHARS` | `12000`                      | Default output cap                     |
+| `MCP_WEBSCRAPE_AUTH_TOKEN`               | _(empty)_                    | Optional bearer token for MCP endpoint |
 
 ## LLM.port Registration
 
-| Field | Value |
-| --- | --- |
-| Name | `webscrape` |
-| Transport | `Streamable HTTP` |
-| URL | `http://<host>:8102/mcp/` |
-| Tool Prefix | `webscrape` |
+| Field       | Value                     |
+| ----------- | ------------------------- |
+| Name        | `webscrape`               |
+| Transport   | `Streamable HTTP`         |
+| URL         | `http://<host>:8102/mcp/` |
+| Tool Prefix | `webscrape`               |
 
 ## License
 
