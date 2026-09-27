@@ -5,7 +5,7 @@ description = "Standalone MCP server for webpage extraction optimized for compac
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.12"
-authors = [{ name = "LLM.port contributors" }]
+authors = [{ name = "Fadenstack contributors" }]
 
 dependencies = [
     "fastapi>=0.115",

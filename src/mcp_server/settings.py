@@ -38,7 +38,7 @@ class WebScrapeProviderSettings(BaseModel):
         le=120,
     )
     user_agent: str = Field(
-        default="LLM.port-Webscrape-MCP/1.0",
+        default="Fadenstack-Webscrape-MCP/1.0",
         title="User Agent",
         description="User-Agent header used while fetching pages",
     )
