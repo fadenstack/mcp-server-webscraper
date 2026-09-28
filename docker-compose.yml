@@ -2,7 +2,7 @@ services:
   mcp-webscrape:
     build:
       context: .
-    image: llmport/mcp-webscrape:latest
+    image: faden/mcp-webscrape:latest
     container_name: mcp-webscrape
     restart: unless-stopped
     env_file: .env

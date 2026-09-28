@@ -41,11 +41,11 @@ Environment variables use prefix `MCP_WEBSCRAPE_`:
 | `MCP_WEBSCRAPE_HOST`                     | `0.0.0.0`                    | Bind host                              |
 | `MCP_WEBSCRAPE_PORT`                     | `8102`                       | Bind port                              |
 | `MCP_WEBSCRAPE_REQUEST_TIMEOUT`          | `20`                         | Fetch timeout (seconds)                |
-| `MCP_WEBSCRAPE_USER_AGENT`               | `LLM.port-Webscrape-MCP/1.0` | HTTP User-Agent                        |
+| `MCP_WEBSCRAPE_USER_AGENT`               | `Fadenstack-Webscrape-MCP/1.0` | HTTP User-Agent                        |
 | `MCP_WEBSCRAPE_DEFAULT_MAX_OUTPUT_CHARS` | `12000`                      | Default output cap                     |
 | `MCP_WEBSCRAPE_AUTH_TOKEN`               | _(empty)_                    | Optional bearer token for MCP endpoint |
 
-## LLM.port Registration
+## Fadenstack Registration
 
 | Field       | Value                     |
 | ----------- | ------------------------- |
